@@ -162,16 +162,17 @@ header h1.bold-name {
     z-index: 1;
     margin-top: 0;
     margin-bottom: 1rem;
-}
-
-p.intro-text {
-    text-align: center;
-    text-transform: uppercase;
+    background: linear-gradient(to top, rgb(241, 196, 15) 50%, rgb(236, 240, 241) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p.intro-title{
     text-align: center;
     text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 
 .scroll-bottom {
@@ -199,7 +200,7 @@ p.intro-title{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 49vh;
+    bottom: 53vh;
     background-color: rgba(41, 128, 185,1.0);
     z-index: -1;
 }
@@ -214,6 +215,43 @@ p.intro-title{
     z-index: -1;
 }
 
+.particles{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.particles{
+    position: absolute;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.particle{
+    border-radius: 50%;
+    filter: blur(3px);
+    position: absolute;
+}
+@keyframes bg {
+    0%{ transform: scale(1.2);}
+    100%{ transform: scale(1.3);}
+}
+@keyframes move {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    10% ,90%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(45vw);
+        opacity: 0;
+    }
+}
 
 
 @media (min-width: 576px) {
@@ -234,13 +272,16 @@ p.intro-title{
 
     header h1.bold-name {
         font-size: 5rem;
+        background: linear-gradient(to right, rgb(241, 196, 15) 50%, rgb(236, 240, 241) 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     #nav-content ul li a {
         padding: 3% 0;
     }
 }
-
 
 @media (min-width: 768px) {
     header h1.bold-name {
