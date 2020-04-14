@@ -271,7 +271,7 @@ p.intro-title{
     }
 
     header h1.bold-name {
-        font-size: 5rem;
+        font-size: 4rem;
         background: linear-gradient(to right, rgb(241, 196, 15) 50%, rgb(236, 240, 241) 50%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -285,7 +285,7 @@ p.intro-title{
 
 @media (min-width: 768px) {
     header h1.bold-name {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     #nav-content ul li a {
@@ -295,7 +295,7 @@ p.intro-title{
 
 @media (min-width: 992px) {
     header h1.bold-name {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     #nav-content ul li a {
@@ -305,7 +305,7 @@ p.intro-title{
 
 @media (min-width: 1200px) {
     header h1.bold-name {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 }
 
