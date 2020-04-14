@@ -158,6 +158,7 @@ header{
 header h1.bold-name {
     text-align: center;
     font-family: 'Monoton', cursive;
+    font-weight: normal;
     font-size: 3.5rem;
     z-index: 1;
     margin-top: 0;
