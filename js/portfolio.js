@@ -56,4 +56,10 @@ $(document).ready(function () {
     var title = document.querySelector('.intro-title');
     var delay = title.innerHTML.length * speed + speed;
     typeEffect(title, speed);
+
+    $('.project-item').each(function () {
+        let bg_url = $(this).attr('data-bg');
+        let bg = $(`<div class="bg-svg"><embed src="${bg_url}"></div>`);
+        $(this).append(bg);
+    })
 });
