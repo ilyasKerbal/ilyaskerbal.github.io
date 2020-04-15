@@ -5,6 +5,8 @@ $(document).ready(function () {
         $('#overlay-nav').toggleClass('active');
     });
 
+    AOS.init({duration: 600, delay: 100});
+
     var particles= document.getElementById("particles");
 
     function main(){
@@ -33,4 +35,25 @@ $(document).ready(function () {
     }
     window.addEventListener("resize", main);
     window.addEventListener("load", main);
+
+    function typeEffect(element, speed) {
+        var text = element.innerHTML;
+        element.innerHTML = "";
+
+        var i = 0;
+        var timer = setInterval(function() {
+            if (i < text.length) {
+                element.append(text.charAt(i));
+                i++;
+            } else {
+                clearInterval(timer);
+            }
+        }, speed);
+    }
+
+
+    var speed = 75;
+    var title = document.querySelector('.intro-title');
+    var delay = title.innerHTML.length * speed + speed;
+    typeEffect(title, speed);
 });
