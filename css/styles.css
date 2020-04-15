@@ -371,10 +371,10 @@ section#projects ul li {
 }
 
 section#projects ul li:first-child{background-color: #2980b9}
-section#projects ul li:nth-child(2){background-color: #f39c12}
-section#projects ul li:nth-child(3){background-color: #27ae60}
-section#projects ul li:nth-child(4){background-color: #8e44ad}
-section#projects ul li:nth-child(5){background-color: #c0392b}
+section#projects ul li:nth-child(2n){background-color: #f39c12}
+section#projects ul li:nth-child(3n){background-color: #27ae60}
+section#projects ul li:nth-child(4n){background-color: #8e44ad}
+section#projects ul li:nth-child(5n){background-color: #c0392b}
 
 .project-item {
     display: flex;
@@ -412,7 +412,7 @@ section#projects ul li:nth-child(5){background-color: #c0392b}
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background: linear-gradient(to right, #1565c0, #b92b27);
+    background: linear-gradient(to right, #2980b9, #b92b27);
     color: white;
     padding: .7rem 3rem;
     align-self: stretch;
@@ -425,6 +425,68 @@ section#projects ul li:nth-child(5){background-color: #c0392b}
     -moz-box-shadow: 0px 0px 17px -5px rgba(0,0,0,0.71);
     box-shadow: 0px 0px 17px -5px rgba(0,0,0,0.71);
 }
+
+/*
+    Skills
+*/
+
+section#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    padding: 1rem 1rem 1rem 2.3rem;
+    border-radius: 7px;
+    background: white;
+    display: flex;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skill-item:hover {
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.71);
+}
+
+
+.skill-item p {
+    margin: 0;
+    z-index: 1;
+}
+
+.skill-item span {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    font-weight: bold;
+    color: rgba(41, 128, 185,0.2);
+    font-size: 3rem;
+}
+
+.skill-item:nth-child(2n) span {
+    color: rgba(211, 84, 0, 0.2);
+}
+
+.skill-item:nth-child(3n) span {
+    color: rgba(22, 160, 133, 0.2);
+}
+
+.skill-item:nth-child(6n) span {
+    color: rgba(241, 196, 15, 0.2);
+}
+
+/*
+    Education
+*/
+
+
 
 
 @media (min-width: 576px) {
