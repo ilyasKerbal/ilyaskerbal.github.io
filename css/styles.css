@@ -171,7 +171,6 @@ header h1.bold-name {
     margin-top: 0;
     margin-bottom: 1rem;
     background: linear-gradient(to top, rgb(241, 196, 15) 50%, rgb(236, 240, 241) 50%);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -763,7 +762,6 @@ section#contact ul li:hover a {
     header h1.bold-name {
         font-size: 4rem;
         background: linear-gradient(to right, rgb(241, 196, 15) 50%, rgb(236, 240, 241) 50%);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
