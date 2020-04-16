@@ -1,8 +1,38 @@
 $(document).ready(function () {
-    $('#menu-icon-shape').on('click', function() {
+
+    function toggleMenu(){
         $('#menu-icon-shape').toggleClass('active');
         $('#top, #middle, #bottom').toggleClass('active');
         $('#overlay-nav').toggleClass('active');
+    }
+
+    function scrollTo(id, duration){
+        duration = duration || 2000;
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(id).offset().top
+        }, duration);
+    }
+
+    $('#menu-icon-shape').on('click', function() {
+        toggleMenu();
+    });
+
+    $('#nav-content ul').on('click', function (evt) {
+        if(evt.target.tagName === "LI"){
+            evt.preventDefault();
+            let id = $(evt.target).find('a').attr('href');
+            scrollTo(id);
+            toggleMenu();
+        }else if (evt.target.tagName === "A"){
+            evt.preventDefault();
+            let id = $(evt.target).attr('href');
+            scrollTo(id);
+            toggleMenu();
+        }
+    });
+
+    $('.scroll-bottom').click(function () {
+        scrollTo('#about-title')
     });
 
     AOS.init({duration: 600, delay: 100});
