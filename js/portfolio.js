@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
     $('.scroll-bottom').click(function () {
-        scrollTo('#about-title')
+        scrollTo('#about-title');
     });
 
     AOS.init({duration: 600, delay: 100});
@@ -91,5 +91,5 @@ $(document).ready(function () {
         let bg_url = $(this).attr('data-bg');
         let bg = $(`<div class="bg-svg"><embed src="${bg_url}"></div>`);
         $(this).append(bg);
-    })
+    });
 });
