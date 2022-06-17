@@ -1,0 +1,211 @@
+/* start header has-style-01 */
+header.has-style-01 {
+    padding: 10rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 767.98px) {
+        text-align: left;
+        padding: 8rem 0 3rem;
+    }
+
+    .shape-01 {
+        left: 25%;
+        top: 150px;
+        width: auto;
+    }
+
+    .shape-02 {
+        left: 50%;
+        top: 150px;
+        width: auto;
+        opacity: .5;
+    }
+
+    .shape-10 {
+        right: 8%;
+        top: 150px;
+        width: 100px;
+        z-index: 50;
+    }
+
+    .shape-07 {
+        left: 10%;
+        bottom: 50px;
+        width: auto;
+    }
+
+    .shape-03 {
+        left: 55%;
+        top: 400px;
+        width: auto;
+    }
+
+    /* start hero-content */
+    .hero-content {
+        position: relative;
+        margin-bottom: 40px;
+
+        h3.title-welcome {
+            color: var(--secondary);
+            position: relative;
+            padding-left: 45px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background: var(--secondary);
+                height: 3px;
+                width: 40px;
+                left: 0;
+                top: 50%;
+            }
+        }
+
+        h1 {
+            color: var(--white);
+            margin: 20px 0;
+        }
+
+        ul.link {
+            margin: 40px 0;
+        }
+
+        @media (max-width: 767.98px) {
+            h1 {
+                font-size: 45px;
+                margin: 1rem auto;
+            }
+
+            ul.link {
+                margin: 1rem auto;
+            }
+        }
+    }
+
+    /* end hero-content */
+    /* start hero-content */
+    .hero-thumb {
+        position: relative;
+        text-align: center;
+
+        .skills,
+        .experience,
+        .play {
+            position: absolute;
+        }
+
+        @media (max-width: 767.98px) {
+
+            .skills,
+            .experience {
+                display: none;
+            }
+        }
+
+        .skills {
+            top: 40%;
+            left: -5.5rem;
+            width: 150px;
+            border-radius: 15px;
+            animation: img-up-down-animation 3s infinite;
+            box-shadow: -15px -15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience {
+            bottom: -3rem;
+            right: -1rem;
+            width: 150px;
+            border-radius: 15px;
+            animation: img-right-left-animation 3s infinite;
+            box-shadow: -15px -15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .play {
+            color: var(--secondary);
+            display: flex;
+            height: 65px;
+            width: 65px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            bottom: 0px;
+            left: 1rem;
+
+            @media (max-width: 767.98px) {
+                bottom: 0%;
+                left: 50%;
+            }
+        }
+
+        .thumb {
+            box-shadow: -15px -15px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 5rem;
+        }
+    }
+
+    /* end hero-thumb */
+    /* start social */
+    ul.social {
+        position: absolute;
+        right: -8rem;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: rotate(-90deg);
+
+        li {
+            display: inline-block;
+            padding: 0 .5rem;
+
+            @media (max-width: 767.98px) {
+                padding: 0 .1rem;
+            }
+
+            a {
+                color: var(--gray);
+                position: relative;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: var(--secondary);
+                }
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            position: static;
+            transform: rotate(0deg);
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+
+    /* end social */
+}
+
+/* end header has-style-01 */
+/* start header has-style-02 */
+header.has-style-02 {
+    padding: 10rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+
+    .shape-10 {
+        right: 0;
+        bottom: 0;
+        width: 300px;
+    }
+
+    .shape-03 {
+        left: 5rem;
+        top: 40%;
+        width: 80px;
+    }
+
+    @media (max-width: 767.98px) {
+        text-align: left;
+        padding: 8rem 0 3rem;
+    }
+}
+
+/* end header has-style-02 */

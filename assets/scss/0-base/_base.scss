@@ -1,0 +1,92 @@
+//bases.scss
+
+@font-face {
+    font-family: "Quicksand-Bold";
+    src: url("../fonts/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quicksand-Medium";
+    src: url("../fonts/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quicksand-Regular";
+    src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h3,
+h4 {
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 85px;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 1.5em;
+}
+
+h3 {
+    color: var(--secondary);
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+h4 {
+    color: var(--white);
+    font-size: 19px;
+    line-height: 1.4em;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7em;
+    font-family: $Quicksand-Medium;
+}

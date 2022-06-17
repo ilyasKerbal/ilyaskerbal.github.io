@@ -1,0 +1,192 @@
+.section {
+    position: relative;
+    padding: 5rem 0;
+    border-top: 2px solid var(--tertiary-02);
+    @media (max-width: 767.98px) {
+        padding: 3rem 0;
+    }
+}
+
+.heading-title {
+    margin-bottom: 2rem;
+    @media (max-width: 767.98px) {
+        margin-bottom: 1rem;
+    }
+    h3 {
+        position: relative;
+        padding-left: 35px;
+        &::before {
+            position: absolute;
+            content: "";
+            background: var(--secondary);
+            height: 2px;
+            width: 30px;
+            left: 0;
+            top: 50%;
+        }
+    }
+    h2 { color: var(--white); margin-top: 10px; }
+}
+
+/*=============== navbar animation ===============*/
+@keyframes navbar-animation {
+    0% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/*=============== dropdown animation ===============*/
+@keyframes dropdown-animation {
+    0% { transform: scaleY(0); }
+    50% { transform: scaleY(1.1); }
+    100% { transform: scaleY(1); }
+}
+
+/*=============== img-up-down-animation ===============*/
+@keyframes img-up-down-animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(25px); }
+    100% { transform: translateY(0); }
+}
+
+/*=============== dropdown animation ===============*/
+@keyframes img-right-left-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(25px); }
+    100% { transform: translateX(0); }
+}
+
+/* start preloader */
+#preloader {
+    background: var(--tertiary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end preloader */
+
+/* start scroll progress up */
+.scroll-up {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    box-shadow: inset 0 0 0 2px var(--tertiary);
+    z-index: 500;
+    opacity: 0;
+    border-radius: 50%;
+    visibility: hidden;
+    transform: translateY(35px);
+    transition: all .3s linear;
+    
+
+    &.active-progress {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    &::after {
+        position: absolute;
+        content: "\f134";
+        font-family: "uicons-regular-rounded";
+        text-align: center;
+        line-height: 46px;
+        font-size: 20px;
+        color: var(--secondary);
+        left: 0;
+        top: 0;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        transition: all .3s linear;
+    }
+
+    & svg path {
+        fill: var(--tertiary);
+    }
+
+    & svg.progress-circle path {
+        stroke: var(--secondary);
+        stroke-width: 4;
+        transition: all .3s linear;
+    }
+}
+/* end scroll progress up */
+
+/* start shape */
+.shape {
+    .shape-01,.shape-02,.shape-03,.shape-04,.shape-05,.shape-06,.shape-07,.shape-08,.shape-09,.shape-10 {
+        position: absolute;
+        z-index: -1;
+        @media all and (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+/* end shape */
+
+/* start breadcrumb */
+.breadcrumb {
+    h2 {
+        color: var(--white);
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    ul {
+        li {
+            margin-right: 10px;
+            color: var(--secondary);
+            a {
+                color: var(--secondary);
+                position: relative;
+                &:hover {
+                    color: var(--white);
+                }
+                &:first-child {
+                    padding-left: 35px;
+                }
+                &:first-child::before {
+                    position: absolute;
+                    content: "";
+                    background: var(--secondary);
+                    height: 2px;
+                    width: 30px;
+                    left: 0;
+                    top: 50%;
+                }
+            }
+        }
+    }
+
+}
+/* end breadcrumb */
+
+/* start hr-01 */
+hr.hr-01 {
+    margin: 1.5rem 0;
+    background: var(--gray);
+    opacity: .1;
+}
+/* end hr-01 */
+
+/* mixin bg-filter */
+@mixin bg-filter {
+    background: var(--tertiary-02);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--tertiary);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}

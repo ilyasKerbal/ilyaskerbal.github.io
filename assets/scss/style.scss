@@ -1,0 +1,63 @@
+// style.scss PortKit - artex development
+
+  // style.scss
+
+  // Helpers
+  @import "1-helpers/colors";
+  @import "1-helpers/variables";
+  @import "1-helpers/classes";
+  
+  // Base
+  @import "0-base/base";
+  @import "0-base/cursor";
+  
+  // elements
+  @import "2-elements/buttons";
+  
+  // Layouts
+  @import "3-Layouts/header";
+  @import "3-Layouts/navbar";
+  @import "3-Layouts/sections";
+  @import "3-Layouts/footer";
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Style Body */
+body {
+  background: var(--primary) url(../images/shape/border.png) fixed center;
+  background-size: 17%;
+  color: var(--gray);
+  font-family: $Quicksand-Bold;
+  font-size: 17px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+/* End Style Body */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
